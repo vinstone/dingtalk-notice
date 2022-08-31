@@ -1,0 +1,40 @@
+{
+    "name": "vinstone/dingtalk-notice",
+    "description": "DingTalk Robot Message Notification",
+    "keywords": ["laravel", "dingtalk", "dingding", "dingtalk notice", "dingtalk message", "钉钉", "钉钉群机器人"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "stone",
+            "email": "jillick@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "^6.2|^7.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.5",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "DingTalkNotice\\": "src/"
+        },
+        "files": [
+            "src/Helper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DingTalkNotice\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DingTalkNotice\\Providers\\DingTalkNoticeProvider"
+            ]
+        }
+    }
+}
