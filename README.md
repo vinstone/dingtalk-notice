@@ -56,7 +56,7 @@ return [
         // 是否启用SSL验证
         'ssl_verify' => env('DINGTALK_SSL_VERIFY',true),
         // 加签密钥
-        'secret' => env('DINGTALK_SECRET',true),
+        'secret' => env('DINGTALK_SECRET',''),
     ],
 
     // 多机器人配置
@@ -70,7 +70,7 @@ return [
         // 是否启用SSL验证
         'ssl_verify' => env('LOG_DINGTALK_SSL_VERIFY',true),
         // 加签密钥
-        'secret' => env('LOG_DINGTALK_SECRET',true),
+        'secret' => env('LOG_DINGTALK_SECRET',''),
     ]
 ];
 ```
